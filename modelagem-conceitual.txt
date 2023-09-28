@@ -1,0 +1,45 @@
+Banco:
+fabrica-pet-petisco
+
+Tabelas:
+1 - Vendedores
+	idvendedor - int primary key auto_increment
+	nome - varchar(30)
+	sexo - enum('m','f')
+	cpf - varchar(14)
+	email - varchar(20)
+	salario - decimal(10,2) 
+
+2 - Cliente
+	idcliente - int primary key auto_increment
+	nome - varchar(30)
+	sexo - enum('m','f')
+	email - varchar(20)
+	estado - char(2)
+
+3 - Produtos
+	idproduto - int primary key auto_increment
+	produto - varchar(30)
+	preco - decimal(10,2)
+	estoque - int(10)
+
+4 - Vendas
+	idvenda - int primary key auto_increment
+	id_vendedor - int
+	foreign key (id_vendedor) references Vendedores(idvendedor)
+	id_cliente - int
+	foreign key (id_cliente) references Cliente(idcliente)
+	id_produto - int
+	foreign key (id_produto) references Produtos(idproduto)
+	quantidade - int(5)
+	preco - decimal(10,2)
+	totalvenda- decimal(10,2)
+
+5 - Vendas_1_trimestre
+	id_vendedor int unique
+	foreign key (id_vendedor) references Vendedores(idvendedor) 
+	janeiro - decimal(10,2) 
+	fevereiro - decimal(10,2) 
+	março - decimal(10,2) 
+
+	
