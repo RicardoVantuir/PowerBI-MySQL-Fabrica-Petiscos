@@ -1,6 +1,3 @@
-[sobre.txt](https://github.com/RicardoVantuir/PowerBI-MySQL-Fabrica-Petiscos/files/12750211/sobre.txt)
-
-
 https://github.com/RicardoVantuir/PowerBI-MySQL-Fabrica-Petiscos/assets/141786208/e586d578-4154-4cc8-8e64-2e56f397b29c
 
 
